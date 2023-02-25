@@ -1,10 +1,10 @@
 #include<stdio.h>
 int main()
 {
-    int num,i,sum=0,temp;
+    int num,i,sum=0,temp=0;
     printf("enter num");
     scanf("%d",&num);
-    for(i==0;i<=num;i++){
+    for(i=0;i<=num;i++){
         if(i%2==0){
         sum=sum+i;
         printf("sum of even is%d",sum);
