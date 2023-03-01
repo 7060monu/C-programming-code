@@ -1,0 +1,14 @@
+
+#include<stdio.h>
+void main(){
+    int i,marks[5],sum=0,avg;
+    for(i=0;i<5;i++){
+        scanf("%d\n",&marks[i]);
+    }
+    for(i=0;i<5;i++){
+        sum=sum+marks[i];
+    }
+    avg=sum/5;     
+    printf("  avg is%d ",avg);
+
+}
