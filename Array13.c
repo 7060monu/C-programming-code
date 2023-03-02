@@ -1,0 +1,30 @@
+#include<stdio.h>
+void main()
+{
+    int a[100],b[100],n,i,j,count =0;
+    printf(" enter the size of array:");
+    scanf("%d",&n);
+    printf(" enter the element of array : ");
+    for(i=0;i<n;i++){
+        scanf("%d",&a[i]);
+    }
+    if(a[i]!= -1){
+        for(i=0;i<n;i++){
+            count =1;
+            for (j=i+1;j<n;j++){
+                if(a[i] == a[j]){
+                    count++;
+                    a[j] = -1;
+                }
+            }
+            b[i] = count;
+        }
+    }
+    for(i=0;i<n;i++){
+        if(a[i]!=-1){
+            printf(" frequency if each elements of %d is %d\n",a[i],b[i]);
+        }
+    }
+
+
+}
