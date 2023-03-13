@@ -1,0 +1,41 @@
+#include<stdio.h>
+void main(){
+    int a[3][3],j,k=2.,i,temp;
+    printf("enter the element of 1st array:");
+    for(int i=0;i<3;i++){
+        for(j=0;j<3;j++){
+            scanf("%d",&a[i][j]);
+        }
+    }
+    printf(" first matrix is :");
+     for(int i=0;i<3;i++){
+        for(j=0;j<3;j++){
+            printf("%d\t",a[i][j]);
+        }
+        printf("\n");
+
+    }
+    for(i=0;i<3;i++){
+        for(j=i;j<=i;j++){
+            temp=a[i][j];
+            a[i][j]=a[i][k];
+            a[i][k]=temp;
+            k--;
+        }
+    }
+    printf(" matrix  after interchange diagonal :");
+     for(int i=0;i<3;i++){
+        for(j=0;j<3;j++){
+            printf("%d\t",a[i][j]);
+        }
+        printf("\n");
+
+    }
+    
+    
+  
+    
+
+
+
+}
