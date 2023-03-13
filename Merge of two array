@@ -1,0 +1,31 @@
+#include<stdio.h>
+void main(){
+    int a[100],b[100],c[100],m,n,k,i;
+    printf(" enter the size of first  element: ");
+    scanf("%d",&n);
+    printf("enter the element of array");
+    for(i=0;i<n;i++){
+        scanf("%d",&a[i]);
+    }
+    printf(" enter the size of second array:");
+    scanf("%d",&m);
+    printf("enter the element of second array:");
+    for(i=0;i<m;i++){
+        scanf("%d",&b[i]);
+
+    }
+    for(i=0;i<n;i++){
+        c[i]=a[i];
+    }
+    k=i;
+    for(i=0;i<m;i++){
+        c[k+i]=b[i];
+    }
+    for(i=0;i<m+n;i++){
+        printf("%d",c[i]);
+    }
+    
+    
+        
+    
+}
